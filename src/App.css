@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #98bf45;
+  --blue: #73a0da;
+  --grey: #7b7b7b;
+  --black: #262626;
+  --lightgrey: #f1f1f1;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 2rem;
+  min-width: 1440px;
+}
+
+html,
+button,
+input {
+  color: var(--black);
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  background-color: var(--green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(8, 85, 8);
+}

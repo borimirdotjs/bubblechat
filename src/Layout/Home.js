@@ -12,7 +12,7 @@ const Home = () => {
       <Hero />
       <About />
       <Customize />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

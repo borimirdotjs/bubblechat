@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
 import illustration from "../../images/hero-illustration.svg";
 
-const Hero = () => {
+const Hero = ({ aboutRef, handleScroll }) => {
   return (
     <section className={styles.hero__container}>
       <div className={styles.hero__text}>
@@ -11,7 +11,9 @@ const Hero = () => {
           A powerful web-based application designed to revolutionize video
           content creation.
         </h2>
-        <button>Learn More</button>
+        <button onClick={() => handleScroll(aboutRef.current)}>
+          Learn More
+        </button>
       </div>
       <div className={styles.hero__image}>
         <img src={illustration} alt="" />

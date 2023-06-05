@@ -3,7 +3,7 @@ import { useContext } from "react";
 import OptionsContext from "../../Context/OptionsContext";
 import { useNavigate } from "react-router-dom";
 
-const Customize = () => {
+const Customize = ({ customizeRef }) => {
   const {
     font,
     setFont,
@@ -17,7 +17,7 @@ const Customize = () => {
 
   return (
     <>
-      <section className={styles.customize__container}>
+      <section className={styles.customize__container} ref={customizeRef}>
         <h3>Customize</h3>
         <div className={styles.options}>
           <div className={styles.customize__options}>
@@ -30,7 +30,7 @@ const Customize = () => {
                     Comfortaa
                   </option>
                   <option value="Poppins">Poppins</option>
-                  <option value="Kot dodi">Drug</option>
+                  <option value="Kanit">Kanit</option>
                 </select>
               </div>
               <div className={styles.bubble__style}>

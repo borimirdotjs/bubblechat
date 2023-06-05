@@ -2,8 +2,33 @@ import styles from "./Footer.module.css";
 import linkedin from "../../images/linkedin.svg";
 import facebook from "../../images/facebook.svg";
 import twitter from "../../images/twittericon.svg";
+import { useState } from "react";
+import { toast } from "react-hot-toast";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
+  const handleEmail = (email) => {
+    if (!email) {
+      toast.error("Please fill in the field");
+    } else {
+      validateEmail(email)
+        ? toast.success("Thank you for subscribing !")
+        : toast.error("Please enter a valid email !");
+    }
+    if (validateEmail(email)) {
+      setEmail("");
+    }
+  };
+
   return (
     <section className={styles.footer__container}>
       <div className={styles.footer__top}>
@@ -56,8 +81,17 @@ const Footer = () => {
         <div className={styles.footer__newsletter}>
           <h4>Subscribe to news</h4>
           <div className={styles.newsletter__container}>
-            <input type="text" placeholder="enter your email" />
-            <button>Subscribe</button>
+            <form onSubmit={(e) => e.preventDefault()}>
+              <input
+                type="text"
+                placeholder="enter your email"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
+              <button onClick={() => handleEmail(email)} type="submit">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
       </div>

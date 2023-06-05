@@ -4,14 +4,28 @@ import About from "../Components/About/About";
 import Customize from "../Components/Customize/Customize";
 import Footer from "../Components/Footer/Footer";
 import styles from "./Home.module.css";
+import { useRef } from "react";
+import { Toaster } from "react-hot-toast";
 
 const Home = () => {
+  const aboutRef = useRef(null);
+  const customizeRef = useRef(null);
+
+  const handleScroll = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={styles.home__container}>
-      <Nav />
-      <Hero />
-      <About />
-      <Customize />
+      <Toaster />
+      <Nav handleScroll={handleScroll} customizeRef={customizeRef} />
+      <Hero handleScroll={handleScroll} aboutRef={aboutRef} />
+      <About aboutRef={aboutRef} />
+      <Customize customizeRef={customizeRef} />
       <Footer />
     </div>
   );

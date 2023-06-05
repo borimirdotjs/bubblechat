@@ -22,9 +22,9 @@ const cards = [
   },
 ];
 
-const About = () => {
+const About = ({ aboutRef }) => {
   return (
-    <section className={styles.about__container}>
+    <section className={styles.about__container} ref={aboutRef}>
       <h3>Is it for you ?</h3>
       <p>
         <span className={styles.about__name}>BubbleChat</span> combines a green

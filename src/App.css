@@ -18,15 +18,14 @@ body {
 }
 
 .App {
-  max-width: 1440px;
   min-height: 100vh;
-  padding: 2rem;
-  min-width: 1440px;
 }
 
 html,
 button,
-input {
+input,
+select,
+option {
   color: var(--black);
   font-family: "Comfortaa", sans-serif;
   font-size: 20px;

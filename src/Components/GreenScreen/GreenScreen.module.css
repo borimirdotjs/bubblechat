@@ -1,0 +1,136 @@
+@import "../../App.css";
+
+.vanish__container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: var(--green);
+  padding: 3rem;
+}
+
+.vanish {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vanish .text_line {
+  background-color: white;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+  color: white;
+  animation: fade 9s forwards;
+  width: fit-content;
+  min-width: 60px;
+  max-width: 350px;
+  display: flex;
+  white-space: pre-wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.vanish .text_line p {
+  flex-wrap: wrap;
+  color: rgb(25, 25, 25);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  5% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.text_line.last {
+  position: relative;
+}
+
+.after_element {
+  content: "";
+  left: 20px;
+  bottom: -4px;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+}
+
+.vanish input,
+.vanish button {
+  padding: 0.5rem 1rem;
+}
+
+.vanish input {
+  margin-top: 2rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  transition: 0.3s all ease-in-out;
+}
+
+.vanish button {
+  display: none;
+}
+
+.welcome_text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  animation: pulse 3s forwards ease;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Bottom Right Positioning */
+
+.bottom_right.vanish__container > .vanish {
+  align-items: flex-end;
+}
+
+.bottom_right.vanish__container {
+  justify-content: flex-end;
+}

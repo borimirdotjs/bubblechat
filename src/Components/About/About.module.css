@@ -20,11 +20,12 @@
   text-align: justify;
   text-justify: newspaper;
   color: var(--grey);
+  font-weight: 700;
 }
 
 .about__name {
   color: var(--black);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .cards__container {

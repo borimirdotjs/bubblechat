@@ -1,21 +1,18 @@
 import "./App.css";
-import Nav from "./Components/Nav/Nav";
-import Hero from "./Components/Hero/Hero";
-import About from "./Components/About/About";
-import Customize from "./Components/Customize/Customize";
-import Footer from "./Components/Footer/Footer";
+import Home from "./Layout/Home";
 import GreenScreen from "./Components/GreenScreen/GreenScreen";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Hero />
-      <About />
-      {/* <Customize />
-      <Footer />
-      <GreenScreen /> */}
-    </div>
+    <>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/greenscreen" element={<GreenScreen />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/bubblechat/static/css/main.5173606d.css",
-    "main.js": "/bubblechat/static/js/main.5771cd13.js",
-    "static/media/hero-illustration.svg": "/bubblechat/static/media/hero-illustration.8e68b3d672991b1f7253f69d1f4ca8da.svg",
-    "static/media/logo.svg": "/bubblechat/static/media/logo.4498483f47199675941f24c56bd457cb.svg",
-    "static/media/customize.svg": "/bubblechat/static/media/customize.d25cf0a8baf411c5fd0757db900a55c8.svg",
-    "static/media/edit.svg": "/bubblechat/static/media/edit.327787c044d7636b5e168ee389a54936.svg",
-    "static/media/record.svg": "/bubblechat/static/media/record.6a35715d04365fb35284210d5a8ee8ca.svg",
-    "static/media/twittericon.svg": "/bubblechat/static/media/twittericon.d0f3f9ef6be5a2668c4e8bbaebe16060.svg",
-    "index.html": "/bubblechat/index.html",
-    "static/media/linkedin.svg": "/bubblechat/static/media/linkedin.14d2694ed9f1e6549fca698d7e4934fd.svg",
-    "static/media/facebook.svg": "/bubblechat/static/media/facebook.00eb30eb580cb3db65c6680aecc7783f.svg",
-    "main.5173606d.css.map": "/bubblechat/static/css/main.5173606d.css.map",
-    "main.5771cd13.js.map": "/bubblechat/static/js/main.5771cd13.js.map"
+    "main.css": "/static/css/main.5173606d.css",
+    "main.js": "/static/js/main.c8bf38c5.js",
+    "static/media/hero-illustration.svg": "/static/media/hero-illustration.8e68b3d672991b1f7253f69d1f4ca8da.svg",
+    "static/media/logo.svg": "/static/media/logo.4498483f47199675941f24c56bd457cb.svg",
+    "static/media/customize.svg": "/static/media/customize.d25cf0a8baf411c5fd0757db900a55c8.svg",
+    "static/media/edit.svg": "/static/media/edit.327787c044d7636b5e168ee389a54936.svg",
+    "static/media/record.svg": "/static/media/record.6a35715d04365fb35284210d5a8ee8ca.svg",
+    "static/media/twittericon.svg": "/static/media/twittericon.d0f3f9ef6be5a2668c4e8bbaebe16060.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.14d2694ed9f1e6549fca698d7e4934fd.svg",
+    "static/media/facebook.svg": "/static/media/facebook.00eb30eb580cb3db65c6680aecc7783f.svg",
+    "main.5173606d.css.map": "/static/css/main.5173606d.css.map",
+    "main.c8bf38c5.js.map": "/static/js/main.c8bf38c5.js.map"
   },
   "entrypoints": [
     "static/css/main.5173606d.css",
-    "static/js/main.5771cd13.js"
+    "static/js/main.c8bf38c5.js"
   ]
 }

@@ -9,8 +9,6 @@ const GreenScreen = () => {
 
   const { font, bubblePosition, bubbleColor } = useContext(OptionsContext);
 
-  console.log(font);
-
   const inputRef = useRef(null);
   const handleMessageSend = (e) => {
     e.preventDefault();

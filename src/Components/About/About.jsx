@@ -39,7 +39,7 @@ const About = ({ aboutRef }) => {
       </p>
       <div className={styles.cards__container}>
         {cards.map((card) => (
-          <div className={styles.about__card}>
+          <div className={styles.about__card} key={card.name}>
             <h4>{card.name}</h4>
             <img src={card.image} alt="" />
             <p>{card.text}</p>

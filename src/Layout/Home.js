@@ -20,14 +20,19 @@ const Home = () => {
   };
 
   return (
-    <div className={styles.home__container}>
-      <Toaster />
-      <Nav handleScroll={handleScroll} customizeRef={customizeRef} />
-      <Hero handleScroll={handleScroll} aboutRef={aboutRef} />
-      <About aboutRef={aboutRef} />
-      <Customize customizeRef={customizeRef} />
-      <Footer />
-    </div>
+    <>
+      <div className={styles.home__container}>
+        <Toaster />
+        <Nav handleScroll={handleScroll} customizeRef={customizeRef} />
+        <Hero handleScroll={handleScroll} aboutRef={aboutRef} />
+        <About aboutRef={aboutRef} />
+        <Customize customizeRef={customizeRef} />
+        <Footer />
+      </div>
+      <h3 className={styles.hidden_message}>
+        Please visit this website on desktop.
+      </h3>
+    </>
   );
 };
 

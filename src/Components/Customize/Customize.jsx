@@ -26,7 +26,7 @@ const Customize = ({ customizeRef }) => {
               <div className={styles.font}>
                 <label htmlFor="font">Choose a font</label>
                 <select id="font" onChange={(e) => setFont(e.target.value)}>
-                  <option selected value="Comfortaa">
+                  <option defaultValue={"Comfortaa"} value="Comfortaa">
                     Comfortaa
                   </option>
                   <option value="Poppins">Poppins</option>
@@ -63,8 +63,8 @@ const Customize = ({ customizeRef }) => {
                     <g filter="url(#filter0_d_5_330)">
                       <path
                         className={styles.bubble__svg}
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M21.5 0C9.62588 0 0 9.62588 0 21.5C0 33.3741 9.62588 43 21.5 43H40.1154C39.9872 45.2 38.3846 49.88 33 51C38 50.6 48 48.44 48 43H227.5C239.374 43 249 33.3741 249 21.5C249 9.62588 239.374 0 227.5 0H21.5Z"
                         fill={bubbleColor}
                       />
@@ -77,12 +77,9 @@ const Customize = ({ customizeRef }) => {
                         width="250"
                         height="53"
                         filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
+                        colorInterpolationFilters="sRGB"
                       >
-                        <feFlood
-                          flood-opacity="0"
-                          result="BackgroundImageFix"
-                        />
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feColorMatrix
                           in="SourceAlpha"
                           type="matrix"
@@ -134,7 +131,7 @@ const Customize = ({ customizeRef }) => {
                 id=""
                 onChange={(e) => setBubblePosition(e.target.value)}
               >
-                <option selected value="bl">
+                <option defaultValue={"bl"} value="bl">
                   Bottom left
                 </option>
                 <option value="br">Bottom right</option>

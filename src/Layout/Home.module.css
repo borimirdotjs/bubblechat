@@ -2,3 +2,23 @@
   max-width: 1440px;
   padding: 2rem 2rem 0rem 2rem;
 }
+
+.hidden_message {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .home__container {
+    display: none;
+  }
+  .hidden_message {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightgrey);
+    text-align: center;
+  }
+}

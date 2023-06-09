@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import styles from "./GreenScreen.module.css";
 import OptionsContext from "../../Context/OptionsContext";
+import { useNavigate } from "react-router-dom";
 
 const GreenScreen = () => {
   const [inputValue, setInputValue] = useState("");
@@ -8,6 +9,8 @@ const GreenScreen = () => {
   const [showTip, setShowTip] = useState(true);
 
   const { font, bubblePosition, bubbleColor } = useContext(OptionsContext);
+
+  const navigate = useNavigate();
 
   const inputRef = useRef(null);
   const handleMessageSend = (e) => {
@@ -46,6 +49,9 @@ const GreenScreen = () => {
       onClick={() => inputRef.current.focus()}
       style={{ fontFamily: font }}
     >
+      <button className={styles.back} onClick={() => navigate("/")}>
+        Go Back
+      </button>
       <div className={styles.vanish}>
         <h3
           style={{ display: showTip ? "block" : "none" }}

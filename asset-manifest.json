@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/bubblechat/static/css/main.480a1180.css",
-    "main.js": "/bubblechat/static/js/main.5c829e1c.js",
+    "main.css": "/bubblechat/static/css/main.8fad345b.css",
+    "main.js": "/bubblechat/static/js/main.21877d56.js",
+    "static/media/background.png": "/bubblechat/static/media/background.35a77aa00065b16adbe7.png",
     "static/media/hero-illustration.svg": "/bubblechat/static/media/hero-illustration.8e68b3d672991b1f7253f69d1f4ca8da.svg",
     "static/media/logo.svg": "/bubblechat/static/media/logo.4498483f47199675941f24c56bd457cb.svg",
     "static/media/customize.svg": "/bubblechat/static/media/customize.d25cf0a8baf411c5fd0757db900a55c8.svg",
@@ -11,11 +12,11 @@
     "index.html": "/bubblechat/index.html",
     "static/media/linkedin.svg": "/bubblechat/static/media/linkedin.14d2694ed9f1e6549fca698d7e4934fd.svg",
     "static/media/facebook.svg": "/bubblechat/static/media/facebook.00eb30eb580cb3db65c6680aecc7783f.svg",
-    "main.480a1180.css.map": "/bubblechat/static/css/main.480a1180.css.map",
-    "main.5c829e1c.js.map": "/bubblechat/static/js/main.5c829e1c.js.map"
+    "main.8fad345b.css.map": "/bubblechat/static/css/main.8fad345b.css.map",
+    "main.21877d56.js.map": "/bubblechat/static/js/main.21877d56.js.map"
   },
   "entrypoints": [
-    "static/css/main.480a1180.css",
-    "static/js/main.5c829e1c.js"
+    "static/css/main.8fad345b.css",
+    "static/js/main.21877d56.js"
   ]
 }
